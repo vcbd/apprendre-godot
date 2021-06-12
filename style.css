@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("Raleway-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("NotoSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  src : url("NotoSans-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src : url("NotoSans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("NotoSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+body {
+   font-family: "Noto Sans", sans-serif;
+   background-image: url("godot.svg");
+   background-repeat: no-repeat;
+}
+
+main {
+   color: black;
+   max-width: 50em;
+   margin: auto;
+}
+a {
+   color: #EC249E;
+}
+a:visited {
+   color: #803161;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: "Raleway", sans-serif;
+   font-weight: 800;
+}
+
+h1 {
+   font-size: 2.5em;
+}
+h2 {
+   font-size: 2em;
+}
+h3, h4, h5, h6 {
+   font-size: 1.5em;
+}
+h4 {
+   font-weight: 600;
+}
+h5 {
+   font-weight: 400;
+}
+h6 {
+   font-weight: 200;
+}
+
+h1:before {
+   content: '';
+}
+h2:before {
+   content: '# ';
+}
+h3:before {
+   content: '## ';
+}
+h4:before {
+   content: '### ';
+}
+h5:before {
+   content: '#### ';
+}
+h6:before {
+   content: '##### ';
+}
+
+#toc {
+   background: #faeded;
+   padding: 2em;
+   border-radius: 1em;
+   margin: 1em;
+}
+#toc > strong {
+   display: block;
+   margin: auto;
+}
+
+@media screen and (orientation: landscape) {
+#toc {
+   float: right;
+   padding: 1em;
+   max-width: 30em;
+   margin-top: -45vh;
+}
+main {
+   margin: 50vh auto;
+}
+}
+
+pre {
+   background: #482743;
+   color: #fff6f6;
+   width: max-content;
+   padding: 1em;
+}
