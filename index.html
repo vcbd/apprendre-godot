@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Créer des jeux vidéo avec Godot</title>
+<script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
+</head><body>
+<nav id="toc"><strong>Table des matières</strong></nav>
+<main id="main">
+<p>Cette page est auto-générée par ECMAScript. Si vous ne voulez pas l’activer dans votre navigateur, la <a href="https://github.com/vcbd/apprendre-godot/">source de ce document</a> est au format Markdown et donc humainement lisible.</p>
+</main>
+<script>
+function changehtml(html) {
+  document.getElementById("main").innerHTML = html;
+}
+window.onload = async function () {
+    changehtml('Chargement en cours…');
+    var converter = new showdown.Converter({literalMidWordUnderscores: true, simplifiedAutoLink: true, strikethrough: true, tables: true, disableForced4SpacesIndentedSublists: true});
+    await fetch('README.md').then(r => r.text()).then(t => changehtml(converter.makeHtml(t)));
+
+    var toc = "";
+    var level = 0;
+
+    var dump =
+        document.getElementById("main").innerHTML.replace(
+            /<h([\d]) id="([0-9a-z-_]+)">(.+)<\/h([\d])>/gi,
+            function (str, openLevel, titleId, titleText, closeLevel) {
+                if (openLevel != closeLevel) {
+                    return str;
+                }
+
+                if (openLevel > level) {
+                    toc += (new Array(openLevel - level + 1)).join("<ol>");
+                } else if (openLevel < level) {
+                    toc += (new Array(level - openLevel + 1)).join("</ol>");
+                }
+
+                level = parseInt(openLevel);
+
+                var anchor = titleId; //titleText.replace(/ /g, "_");
+                toc += "<li><a href=\"#" + anchor + "\">" + titleText
+                    + "</a></li>";
+
+                return "<h" + openLevel + "><a name=\"" + anchor + "\">"
+                    + titleText + "</a></h" + closeLevel + ">";
+            }
+        );
+
+    if (level) {
+        toc += (new Array(level + 1)).join("</ol>");
+    }
+
+    document.getElementById("toc").innerHTML += toc;
+};
+</script>
+
+<!-- Hi there. -->
+        <script type="text/javascript">
+          var _paq = _paq || [];
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u="//vincent.bradier.net/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', 2]);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+        <noscript><p><img src="//vincent.bradier.net/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+
+</body></html>
