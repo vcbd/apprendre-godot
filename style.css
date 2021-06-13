@@ -107,6 +107,12 @@ main {
 }
 }
 
+code {
+   color: #482743;
+}
+pre > code {
+   color: #fff6f6;
+}
 pre {
    background: #482743;
    color: #fff6f6;
