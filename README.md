@@ -1,3 +1,5 @@
+***En cours de construction !!!***
+
 [Cette page](https://vincent.bradier.net/godot/) et [sa source](https://github.com/vcbd/apprendre-godot) sont sous licence [CC by-nc-sa 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). A été rédigée à l’été 2021, version 3.3.2 du Godot Engine — les liens vers la documentation francophone ne référençant que la version *stable* ou *latest* du moteur, ils pourraient dans le futur devenir obsolètes.
 
 Elle a été créée comme point d’entrée, support et guide ultérieur (toutes les sections *Aller + loin*) à un premier atelier création de jeux vidéo au GEM Queer de Lille mais peut sans doute servir à d’autres. Si vous êtes seul·e, comptez bien jusqu’au triple des temps indiqués pour étudier chaque concept.
