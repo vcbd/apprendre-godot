@@ -27,12 +27,17 @@ body {
    font-family: "Noto Sans", sans-serif;
    background-image: url("godot.svg");
    background-repeat: no-repeat;
+   margin: 0;
 }
 
 main {
    color: black;
-   max-width: 50em;
-   margin: auto;
+}
+
+main > * {
+   max-width: 50rem;
+   margin-left: auto;
+   margin-right: auto;
 }
 a {
    color: #EC249E;
@@ -100,10 +105,10 @@ h6:before {
    float: right;
    padding: 1em;
    max-width: 30em;
-   margin-top: -45vh;
+   margin-top: -20em;
 }
 main {
-   margin: 50vh auto;
+   margin: 25em auto;
 }
 }
 
@@ -112,10 +117,14 @@ code {
 }
 pre > code {
    color: #fff6f6;
+   display: block;
+   max-width: 50rem;
+   margin: auto;
 }
 pre {
    background: #482743;
    color: #fff6f6;
-   width: max-content;
+   margin: unset;
+   max-width: unset;
    padding: 1em;
 }
