@@ -134,6 +134,42 @@ body {
 }
 }
 
+@media screen and (any-hover) and (min-width: 70rem) {
+   body {
+      background-size: 85vw;
+      background-position-x: center;
+      padding-top: 12vw;
+   }
+   #toc {
+      position: fixed;
+      overflow-y: scroll;
+      margin: 0;
+      top: 1em;
+      height: 9.5em;
+      right: -29.5em;
+      transition: all .2s ease-in-out;
+   }
+   #toc > strong {
+      position: absolute;
+      rotate: -90deg;
+      left: -3.5em;
+      top: 5em;
+      transition: all .2s ease-in-out;
+   }
+   #toc:hover {
+      right: 1em;
+      height: 90vh;
+      height: calc(100vh - 4em);
+      transition: all .2s;
+   }
+   #toc:hover > strong {
+      position: relative;
+      rotate: 0deg;
+      left: 0;
+      top: 0;
+   }
+}
+
 code {
    color: #482743;
 }
