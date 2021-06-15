@@ -25,9 +25,7 @@
 
 body {
    font-family: "Noto Sans", sans-serif;
-   background-image: url("godot.svg");
-   background-repeat: no-repeat;
-   margin: 0;
+   margin: 1em;
 }
 
 main {
@@ -100,15 +98,21 @@ h6:before {
    margin: auto;
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (min-width: 55rem) {
 #toc {
    float: right;
    padding: 1em;
    max-width: 30em;
-   margin-top: -20em;
+   margin-top: -20vw;
 }
 main {
-   margin: 25em auto;
+   margin: 25vw auto;
+}
+body {
+   background-image: url("godot.svg");
+   background-repeat: no-repeat;
+   background-size: calc(95vw - 30em);
+   margin: 0;
 }
 }
 
@@ -119,6 +123,7 @@ pre > code {
    color: #fff6f6;
    display: block;
    max-width: 50rem;
+   min-width: max-content;
    margin: auto;
 }
 pre {
@@ -126,5 +131,6 @@ pre {
    color: #fff6f6;
    margin: unset;
    max-width: unset;
+   min-width: max-content;
    padding: 1em;
 }
