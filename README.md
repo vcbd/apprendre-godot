@@ -239,25 +239,29 @@ shader_type spatial;                                       // On travaille en 3D
 
 render_mode blend_mix,cull_disabled,diffuse_burley;        // Modes de rendu, presets de confs courantes
 
-uniform vec4 albedo : hint_color;                          // Propose de choisir la couleur du matériel dans l’inspecteur
-	                                                       // (le vec4 est utilisé pour les couleurs et définit rouge, vert, bleu
-	                                                       // (couleurs primaires de la lumière) mais aussi alpha (transparence))
+uniform vec4 albedo : hint_color;                          // Propose de choisir la couleur du matériel dans
+                                                           // l’inspecteur (le vec4 est utilisé pour les
+                                                           // couleurs et définit rouge, vert, bleu
+                                                           // (couleurs primaires de la lumière) mais aussi
+                                                           // alpha (transparence))
 
-void fragment() {                                          // Fonction exécutée pour chaque pixel affichant un fragment
-	                                                       // du mesh sur lequel est appliqué ce matériel (on remarque que
-	                                                       // le bloc est défini par {} et non plus par l’indentation du code)
-	
-	vec3 material_color = albedo.rgb;                      // On récupère la couleur depuis la propriété albedo
-	                                                       // du matériel (notez le vec3)
-	
-	ALBEDO = material_color;                               // On attribue au pixel la couleur récupérée ci-dessus
-	
-	NORMAL = normalize(cross(dFdx(VERTEX), dFdy(VERTEX))); // On redéfinit la normale du pixel de façon à ne
-	                                                       // pas adoucir les bords au rendu
+void fragment() {                                          // Fonction exécutée pour chaque pixel affichant
+                                                           // un fragment du mesh sur lequel est appliqué ce
+                                                           // matériel (on remarque que le bloc est défini
+                                                           // par {} et non plus par l’indentation du code)
 
-}                                                          // On remarque également qu’on s’est permis beaucoup
-	                                                       // de calculs qui vont être évalués à CHAQUE pixel
-	                                                       // et ce à 60 images par seconde : les GPU sont monstrueux.
+    vec3 material_color = albedo.rgb;                      // On récupère la couleur depuis la propriété
+                                                           // albedo du matériel (notez le vec3)
+
+    ALBEDO = material_color;                               // On attribue au pixel la couleur ci-dessus
+
+    NORMAL = normalize(cross(dFdx(VERTEX), dFdy(VERTEX))); // On redéfinit la normale du pixel de façon à ne
+                                                           // pas adoucir les bords au rendu
+
+}                                                          // On remarque également qu’on s’est permis
+                                                           // beaucoup de calculs qui vont être évalués à
+                                                           // CHAQUE pixel et ce à 60 images par seconde :
+                                                           // les GPU sont monstrueux.
 ```
 
 Pour mieux comprendre cet exemple (mais en anglais désolé) : http://www.aclockworkberry.com/shader-derivative-functions/ (introduit aussi au coût des branches sur le GPU)  
