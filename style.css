@@ -1,28 +1,3 @@
-/*@font-face {
-  font-family: "Raleway";
-  src: url("Raleway-VariableFont_wght.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Noto Sans";
-  src: url("NotoSans-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Noto Sans";
-  src : url("NotoSans-Italic.ttf") format("truetype");
-  font-style: italic;
-}
-@font-face {
-  font-family: "Noto Sans";
-  src : url("NotoSans-BoldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Noto Sans";
-  src: url("NotoSans-Bold.ttf") format("truetype");
-  font-weight: bold;
-}*/
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@200;400;600;800&family=Source+Code+Pro&display=swap');
 
 body {
@@ -195,4 +170,5 @@ pre {
    max-width: unset;
    min-width: max-content;
    padding: 1em;
+   font-size: smaller;
 }
