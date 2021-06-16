@@ -113,7 +113,7 @@ Godot/
 	* Ça permet de "mettre à jour" Godot (comprendre télécharger une nouvelle version à côté des précédentes) sans risquer de casser nos projets existants
 	* en fonction des notes de mise à jour, on peut continuer un projet sur une version plus récente du moteur (s’il y a de nouvelles fonctionnalités intéressantes bien sûr ! Le mieux est l’ennemi du bien) (!!!!!! Bien vérifier le changelog pour tout *breaking change* !!!!!!) (Les changements de version majeure (comme la future v4), faites-vous une faveur et considérez ça comme impossible de base) :
 	  1. Tester le projet sur la nouvelle version, toujours.
-	  2. Si tout va bien : fermer le projet puis le **copier** vers la nouvelle version (si vous utilisez un cvs, vous pouvez déplacer mais taguez le changement de version du moteur, avant de le faire) (le but est de pouvoir revenir en arrière si on découvre plus tard un bug bloquant lié au changement de version) (oui ça implique de s’asseoir sur ce qu’on a fait depuis, mais c’est mieux que de s’asseoir sur tout son projet) (pour éviter ce genre de scénario je vous conseille de tester, tester, tester comme préconisé au point précédent)
+	  2. Si tout va bien : fermer le projet puis le **copier** vers la nouvelle version (si vous utilisez un vcs, vous pouvez déplacer mais taguez le changement de version du moteur, avant de le faire) (le but est de pouvoir revenir en arrière si on découvre plus tard un bug bloquant lié au changement de version) (oui ça implique de s’asseoir sur ce qu’on a fait depuis, mais c’est mieux que de s’asseoir sur tout son projet) (pour éviter ce genre de scénario je vous conseille de tester, tester, tester comme préconisé au point précédent)
 	  3. Scanner le projet dans son chemin correspondant à la nouvelle version
 	  4. ???
 	  5. Profit!!
@@ -293,7 +293,7 @@ Vous l’avez déjà mais : https://docs.godotengine.org/fr/stable/index.html
 * Les *tutoriels* approfondissent bien les concepts qu’on a déjà vus
 * *Godot API* (tout en bas du menu) n’est pas traduite, fait très peur, est incomplète mais deviendra vite votre référence une fois que vous saurez vous orienter seul·e
 
-#### CVS avec git
+#### VCS avec git
 * https://github.com/godotengine/godot-git-plugin devrait permettre de commit directement depuis Godot.
 * https://github.com/FredrikNoren/ungit (tout OS) permet d’utiliser Git sans trop toucher à la ligne de commande (car je sais, ça fait peur. Mais c’est rudement pratique)
 * Voir aussi https://docs.godotengine.org/fr/stable/getting_started/workflow/project_setup/version_control_systems.html
