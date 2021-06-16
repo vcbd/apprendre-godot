@@ -92,9 +92,12 @@ h6:before {
    display: block;
    margin: auto;
 }
+#toc > ol {
+   padding-left: 0;
+}
 #toc > ol ol {
-   border-left: 1px solid #c4b7b7;
-   padding-left: 2em;
+   border-left: 1px solid #e8d1dc;
+   padding-left: 1.5em;
 }
 
 @media screen and (min-width: 55rem) {
@@ -103,6 +106,9 @@ h6:before {
    padding: 1em;
    max-width: 30em;
    margin-top: -20vw;
+}
+#toc > ol {
+   padding-left: 2.5em;
 }
 main {
    margin: 25vw auto;
