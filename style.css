@@ -7,6 +7,7 @@ body {
 
 main {
    color: black;
+   margin-bottom: 10em;
 }
 
 main > * {
@@ -112,7 +113,6 @@ h6:before {
 }
 main {
    margin: 25vw auto;
-   margin-bottom: 10em;
 }
 body {
    background-image: url("godot.svg");
