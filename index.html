@@ -15,7 +15,7 @@ function changehtml(html) {
   document.getElementById("main").innerHTML = html;
 }
 window.onload = async function () {
-    changehtml('Chargement en cours…');
+    changehtml('<p>Chargement en cours…</p>');
     var converter = new showdown.Converter({literalMidWordUnderscores: true, simplifiedAutoLink: true, strikethrough: true, tables: true, disableForced4SpacesIndentedSublists: true});
     await fetch('README.md', {cache: "no-cache"}).then(r => r.text()).then(t => changehtml(converter.makeHtml(t)));
 
