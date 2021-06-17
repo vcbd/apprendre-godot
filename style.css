@@ -6,7 +6,7 @@ body {
 }
 
 main {
-   color: black;
+   color: #333;
    margin-bottom: 10em;
 }
 
@@ -177,4 +177,32 @@ pre {
    min-width: max-content;
    padding: 1em;
    font-size: smaller;
+}
+
+@media (prefers-color-scheme: dark) {
+   body {
+      background-color: #111;
+   }
+   #toc {
+      background-color: #6c525e;
+      color: #eee;
+   }
+   #toc a {
+      color: #F9DFE7;
+   }
+   main {
+      color: #ddd;
+   }
+   code {
+      color: #b37eab;
+   }
+   a:visited {
+      color: #b3779b;
+   }
+   hr:before {
+      color: #eee;
+      background: linear-gradient(#0c0c0c, #1c1c1c 20%, #1c1c1c 80%, #0c0c0c);
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+   }
 }
