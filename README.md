@@ -270,7 +270,7 @@ Important. Les shaders font (ou défont) toute l’ambiance d’un jeu. Quasimen
 ##### Aller + loin
 https://docs.godotengine.org/fr/stable/tutorials/3d/index.html
 
-#### Mixer tout ça
+#### Aller + loin
 
 ##### Viewports
 https://docs.godotengine.org/fr/stable/tutorials/viewports/viewports.html
@@ -283,6 +283,10 @@ https://docs.godotengine.org/fr/stable/tutorials/viewports/viewports.html
 * https://freesound.org
 
 ## Et ensuite ? (bonus 10mn)
+
+### On garde contact ?
+* Pas très motivant de bosser tout·e seul·e dans son coin.
+* svp svp svp
 
 ### Aller + loin (en ligne)
 On ne verra pas tout ça sur place (ou pas tout de suite)
@@ -327,10 +331,6 @@ https://docs.godotengine.org/fr/stable/tutorials/legal/complying_with_licenses.h
 
 ###### CC0, WTFPL, etc.
 Licences "domaine public", mais c’est toujours sympa de créditer quand même. Dans le doute, lire la licence (oui…) permet de connaître précisément les conditions de redistribution ou modification.
-
-### On garde contact ?
-* Pas très motivant de bosser tout·e seul·e dans son coin.
-* svp svp svp
 
 ### Maintenant, apprenez !
 C’était dense mais c’était que le début. Tous les points *Aller + loin* sont des portes d’entrée vers certains concepts importants ou leur approfondissement. Même une fois que toute cette page sera maîtrisée ce sera que le début. Quand vous distribuerez votre premier jeu, alors là on pourra dire que c’est que le début. Quand vous contribuerez à Godot ce sera que le début. Quand vous créerez vos propres moteurs ce sera encore que le début.
