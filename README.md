@@ -200,8 +200,10 @@ On va mapper, pour chaque action, un ou des boutons permettant de l’effectuer 
 #### Les actions dans les scripts
 
 ##### La fonction `_input`
+Appelée à chaque pression de læ joueureuse sur un bouton mappé.
 
 ##### Le singleton `Input`
+Utile pour savoir si une action est appelée en ce moment. On pourrait l’utiliser à chaque image rendue (dans *_process()*) pour faire bouger le personnage jouable par exemple.
 
 ---
 Jusque là c’était assez abstrait, mais on arrive enfin à la partie où on affiche des trucs ! Et avec tout ce qu’on a vu avant on va pouvoir itérer très rapidement sur un prototype de jeu simple.
