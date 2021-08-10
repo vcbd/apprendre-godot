@@ -196,11 +196,23 @@ Il est possible de coder sa logique en fonction des boutons mais pour plein de b
 ##### InputMap
 On va mapper, pour chaque action, un ou des boutons permettant de l’effectuer physiquement.
 * *Projet > Paramètres du projet > Contrôles*
+* Chaque action a un (1) nom et (plusieurs) bouton(s)
 
 #### Les actions dans les scripts
 
 ##### La fonction `_input`
-Appelée à chaque pression de læ joueureuse sur un bouton mappé.
+Appelée à chaque pression de læ joueureuse sur un bouton mappé. Le nœud le plus bas voit l’action en premier. Il existe une fonction très proche permettant de ne traiter que les actions qui ne sont pas marquées comme étant déjà traitées.  
+Il est également possible de demander au moteur de ne plus envoyer d’actions, ou d’y ressouscrire.
+```
+func _input(event):
+	pass
+func _unhandled_input(event):
+	get_tree().set_input_as_handled()  // On marque l’action traitée
+
+set_process_input(false)             // Désabonnement
+set_process_unhandled_input(true)
+```
+`event` est une instance de la classe `InputEvent`, elle contient les informations sur l’entrée.
 
 ##### Le singleton `Input`
 Utile pour savoir si une action est appelée en ce moment. On pourrait l’utiliser à chaque image rendue (dans *_process()*) pour faire bouger le personnage jouable par exemple.
