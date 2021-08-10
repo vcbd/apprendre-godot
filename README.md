@@ -187,8 +187,15 @@ Les langages C et C++, installer un compilateur, les pointeurs… sont hors du c
 #### Mappage des boutons
 
 ##### Boutons vs. actions
+* Bouton : entrée physique d’un périphérique (A sur manette, Q sur clavier…)
+* Action : action demandée par læ joueureuse (sauter, planter, triple axel…)
+
+Il est possible de coder sa logique en fonction des boutons mais pour plein de bonnes raisons, Godot pousse à utiliser plutôt les actions.  
+Ça permet d’attribuer simplement plusieurs boutons (p.ex manette et clavier) à une même action et de les changer plus tard (notamment pendant l’exécution du jeu).
 
 ##### InputMap
+On va mapper, pour chaque action, un ou des boutons permettant de l’effectuer physiquement.
+* *Projet > Paramètres du projet > Contrôles*
 
 #### Les actions dans les scripts
 
@@ -270,7 +277,7 @@ Important. Les shaders font (ou défont) toute l’ambiance d’un jeu. Quasimen
 ##### Aller + loin
 https://docs.godotengine.org/fr/stable/tutorials/3d/index.html
 
-#### Aller + loin
+#### Aller + loin (toujours + loin)
 
 ##### Viewports
 https://docs.godotengine.org/fr/stable/tutorials/viewports/viewports.html
